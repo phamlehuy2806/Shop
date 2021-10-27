@@ -1,0 +1,28 @@
+<aside>
+  <div class="sidearea">
+    <label for="pricerange"
+      >Highest Price: <span>${{ priceRange }}</span></label
+    >
+    <input
+      [value]="priceRange"
+      class="slider"
+      id="pricerange"
+      [type]="'range'"
+      [min]="inputmin"
+      [max]="inputmax"
+      [step]="0.1"
+      (change)="onchange($event)"
+    />
+    <span class="min">${{ inputmin }}</span>
+    <span class="max">${{ inputmax }}</span>
+  </div>
+  <ng-content> </ng-content>
+  <div class="sidearea callout">
+    <h4>Special Sale!</h4>
+    <p>Hiện tại shop đã có những chương trình sale cho khách hàng.</p>
+  </div>
+  <div class="sidearea callout">
+    <h4>Contact Us</h4>
+    <p>Nếu có câu hỏi hãy liên hệ : 1800 1000 . Để chúng tôi có thể tư vấn cho bạn.</p>
+  </div>
+</aside>
