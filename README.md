@@ -1,4 +1,5 @@
-<<<<<<< HEAD
-=======
+# install dependencies
+$ npm install
 
->>>>>>> a24a3ec1c85ae40492b9113ded46575ed7c566c9
+# serve with hot reload at localhost
+$ ng serve
